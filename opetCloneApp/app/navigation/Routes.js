@@ -152,6 +152,16 @@ const MyDrawer = () => {
                   ),
               }}
             />
+            <Drawer.Screen
+              name="IletisimScreen"
+              component={IletisimScreenStack}
+              options={{
+                  drawerLabel: 'İletişim',
+                  drawerIcon: ({focused}) =>(
+                      <IconMa name='campaign' size={24} color= '#fff'/>
+                  ),
+              }}
+            />
         </Drawer.Navigator>
     );
 };
