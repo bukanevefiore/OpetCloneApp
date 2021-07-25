@@ -10,7 +10,7 @@ const IletisimScreen = ({navigation}) => {
         <SafeAreaView style={{flex: 1, justifyContent: 'center', }}>
             <ScrollView style={{flex: 1, backgroundColor: '#1a7ed3'}}>
                 <TouchableOpacity
-                onPress={() => navigation.navigate('IletisimFormuScreen')}
+                //onPress={() => navigation.navigate('IletisimFormuScreen')}
                 style={{
                     marginTop: 70,
                     height: 80,
@@ -50,7 +50,7 @@ const IletisimScreen = ({navigation}) => {
                         <Icon name="arrow-forward-ios" size={32} color= '#f2e600'/>
                     </View>
                 </TouchableOpacity>
-
+ 
                 <TouchableOpacity
                 onPress={() => phonecall('+905321645027', true)}
                 style={{

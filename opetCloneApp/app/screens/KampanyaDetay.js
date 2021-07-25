@@ -5,7 +5,8 @@ import { deviceHeight } from '../utils/dimensions';
 const KampanyaDetayScreen = ({route, navigation}) => {
     const item = route.params;
     return (
-        <View style={{width: '100%', paddingVertical: 0, paddingHorizontal: 0 ,alignItems: 'center', 
+        <View style={{width: '100%', paddingVertical: 0, backgroundColor: '#f0f8ff' , height: '100%',
+        paddingHorizontal: 0 ,alignItems: 'center', 
     }}>
         <Image 
         style={{resizeMode: 'stretch', width: '100%', height: deviceHeight/2}}

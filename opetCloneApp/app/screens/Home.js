@@ -6,14 +6,14 @@ import { deviceWidth, deviceHeight } from '../utils/dimensions';
 import { FlatListSlider } from 'react-native-flatlist-slider';
 
 
-const bgImage = { uri: 'https://devirsaati.com/wp-content/uploads/2020/04/OPET-istasyon.jpg' };
+const bgImage = { uri: 'https://seeklogo.com/images/O/Opet-logo-B963B9C1FC-seeklogo.com.png' };
 const images = [
     {
-        image: 'https://images.unsplash.com/photo-1567226475328-9d6baaf565cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
+        image: 'https://cdnuploads.aa.com.tr/uploads/sirkethaberleri/Contents/2020/04/28/thumbs_b_c_70ec5f5bcbabbfad76dbe9dc5a6db539.jpg',
         desc: 'Silent Waters in the mountains in midst of Himilayas',
     },
     {
-        image: 'https://images.unsplash.com/photo-1455620611406-966ca6889d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1130&q=80',
+        image: 'https://lh3.googleusercontent.com/proxy/qVTRUiSjqrtypl_M7-Ta2PebAF9O0Bgww2_I7Wb_BzolJX-XpNH1PXYymrjqTcyK_lBjYKYk9cPKsfbbDvrTX1Mja2-Z6R6CiD2SR0iTyQIXeGcwYA',
         desc:
             'Red fort in India New Delhi is a magnificient masterpeiece of humans',
     },
@@ -26,10 +26,10 @@ export default HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#0271cd' }}>
             <View style={{ flex: 1, }}>
-                <View style={{ flex: 1, backgroundColor: '#e9bc18', height: deviceHeight / 2 }}>
+                <View style={{ flex: 2, backgroundColor: '#e9bc18', height: deviceHeight / 2 }}>
                     <FlatListSlider
                         data={images}
-                        height={deviceHeight/2}
+                        height={deviceHeight/2.5}
                         timer={5000}
                         onPress={item => alert(JSON.stringify(item))}
                         contentContainerStyle={{ paddingHorizontal: 0 }}

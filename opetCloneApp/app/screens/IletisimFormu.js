@@ -7,7 +7,7 @@ import RNSmtpMailer from 'react-native-smtp-mailer';
 
 
 
-const IletisimFormuScreen = () => {
+const IletisimFormuScreen = ({navigation}) => {
     const [adi, setAdi] = useState('');
     const [adiValid, setAdiValid] = useState(false);
     const [adiValidMesaj, setAdiValidMesaj] = useState('Boş Geçilemez');
