@@ -8,23 +8,23 @@ import {phonecall, email, web} from 'react-native-communications';
 const IletisimScreen = ({navigation}) => {
     return (
         <SafeAreaView style={{flex: 1, justifyContent: 'center', }}>
-            <ScrollView style={{flex: 1, backgroundColor: '#1a7ed3'}}>
-                <TouchableOpacity
-                //onPress={() => navigation.navigate('IletisimFormuScreen')}
-                style={{
-                    marginTop: 70,
-                    height: 80,
-                    flexDirection: 'row',
-                    backgroundColor: '#0070d4',
-                    alignItems: 'center',
-                    paddingHorizontal: 10,
-                    margin: 10,
-                    borderRadius: 30,
-                    borderWidth: 1,
-                    borderColor: '#ffffff',
-                    justifyContent: 'space-between',
-                }}>
-                    <View
+           <ScrollView style={{flex: 1, backgroundColor: '#1a7ed3'}}>
+           <TouchableOpacity
+           onPress={() => navigation.navigate('IletisimFormuScreen')}
+           style={{
+            marginTop: 70,
+            height: 80,
+            flexDirection: 'row',
+            backgroundColor: '#0070d4',
+            alignItems: 'center',
+            paddingHorizontal: 10,
+            margin: 10,
+            borderRadius: 30,
+            borderWidth: 1,
+            borderColor: '#ffffff',
+            justifyContent: 'space-between',
+        }}>
+            <View
                     style={{
                         backgroundColor: '#1a7ed3',
                         borderRadius: 40,
@@ -35,7 +35,7 @@ const IletisimScreen = ({navigation}) => {
                     }}>
                         <Icon name="edit" size={32} color="#ffffff" />
                     </View>
-                    <View style={{flexDirection: 1, margin: 10}}>
+                    <View style={{flex: 1, margin: 10}}>
                         <Text style={{color: '#ffffff', fontSize: 18}}>
                             Öneri ve Şikayetlerinizi yazabilirsiniz..
                         </Text>
@@ -49,9 +49,9 @@ const IletisimScreen = ({navigation}) => {
                     }}>
                         <Icon name="arrow-forward-ios" size={32} color= '#f2e600'/>
                     </View>
-                </TouchableOpacity>
- 
-                <TouchableOpacity
+           </TouchableOpacity>
+
+           <TouchableOpacity
                 onPress={() => phonecall('+905321645027', true)}
                 style={{
                     height: 80,
@@ -76,7 +76,7 @@ const IletisimScreen = ({navigation}) => {
                     }}>
                         <Icon name="phone" size={32} color="#ffffff" />
                     </View>
-                    <View style={{flexDirection: 1, margin: 10}}>
+                    <View style={{flex: 1, margin: 10}}>
                         <Text style={{color: '#ffffff', fontSize: 24}}>
                             +90 532 164 5027
                         </Text>
@@ -103,6 +103,7 @@ const IletisimScreen = ({navigation}) => {
                     paddingHorizontal: 10,
                     borderRadius: 30,
                     borderWidth: 1,
+                    margin: 10,
                     borderColor: '#ffffff',
                     justifyContent: 'space-between',
                 }}>
@@ -173,9 +174,10 @@ const IletisimScreen = ({navigation}) => {
                     </View>
                     
                 </TouchableOpacity>
-            </ScrollView>
+           </ScrollView>
         </SafeAreaView>
     );
 };
 
 export default IletisimScreen;
+

@@ -11,6 +11,7 @@ import IconFa from 'react-native-vector-icons/FontAwesome5';
 import MaC from 'react-native-vector-icons/MaterialCommunityIcons';
 import IletisimScreen from '../screens/Iletisim';
 import KampanyaDetayScreen from '../screens/KampanyaDetay';
+import IletisimFormuScreen from '../screens/IletisimFormu';
 
 
 
@@ -122,7 +123,7 @@ const IletisimScreenStack = ({ navigation }) => {
         name="Kampanya"
         component={IletisimScreen}
         options={{
-          title: '    Iletisim',
+          title: '    İletişim',
           headerLeft: () => (
             <TouchableOpacity
               onPress={() => navigation.navigate("Home")}
@@ -212,6 +213,18 @@ const Routes = () => {
         <Stack.Screen name="KampanyaDetayScreen" component={KampanyaDetayScreen}
           options={{
             title: 'Kampanya Detay ',
+            headerStyle: {
+              backgroundColor: '#0070d4',
+            },
+            headerTintColor: '#ffffff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        />
+         <Stack.Screen name="IletisimFormuScreen" component={IletisimFormuScreen}
+          options={{
+            title: 'Iletişim Formu  ',
             headerStyle: {
               backgroundColor: '#0070d4',
             },

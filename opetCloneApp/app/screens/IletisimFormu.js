@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { View, Text, SafeAreaView, TextInput,ScrollView, TouchableOpacity } from 'react-native';
-import { useState } from 'react/cjs/react.production.min';
 import { CheckBox } from 'react-native-elements';
 import DropDownPicker from 'react-native-dropdown-picker';
 import RNSmtpMailer from 'react-native-smtp-mailer';
@@ -174,7 +173,6 @@ const IletisimFormuScreen = ({navigation}) => {
                         {
                             label: 'İstek',
                             value: 'İstek',
-                            hidden: true,
                         },
                         {
                             label: 'Şikayet',
@@ -276,3 +274,4 @@ const IletisimFormuScreen = ({navigation}) => {
 };
 
 export default IletisimFormuScreen;
+

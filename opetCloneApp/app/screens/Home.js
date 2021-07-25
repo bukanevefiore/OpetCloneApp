@@ -53,7 +53,7 @@ export default HomeScreen = ({ navigation }) => {
                             justifyContent: 'center'
                         }}>
                             <Text style={{ fontSize: 24, color: '#fff' }}>En Yakın Opet</Text>
-                            <Text style={{ fontSize: 48, color: '#fff' }}>2.1 km</Text>
+                            <Text style={{ fontSize: 36, color: '#fff' }}>2.1 km</Text>
                         </View>
                         <View style={{
                             flex: 1, alignItems: 'center',
@@ -68,7 +68,7 @@ export default HomeScreen = ({ navigation }) => {
                 <View style={{ flex: 1, flexDirection: 'row' }}>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text style={{ fontSize: 24, color: '#fff' }}>Benzin</Text>
-                        <Text style={{ fontSize: 48, color: '#fff' }}>7 tl</Text>
+                        <Text style={{ fontSize: 36, color: '#fff' }}>7 tl</Text>
                     </View>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text style={{ fontSize: 24, color: '#fff' }}>Ödeme Yap</Text>
